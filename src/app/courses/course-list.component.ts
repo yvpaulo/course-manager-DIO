@@ -16,18 +16,19 @@ export class CourseListComponent implements OnInit {
     constructor(private courseService: CourseService) { }
 
     ngOnInit(): void { 
-        this.filteredCourses= [
+      /*  this.filteredCourses= [
              {id: 1,
              name: 'Pedro',
-             imageUrl: '',
+             imageUrl: '/assets/images/forms.png',
              price: 2,
              code: 'string',
              duration: 10,
-             rating: 2.2,
+             rating: 3.0,
              releaseDate: 'amanha',
              description: 'legal'}
-        ]
-       // this.retrieveAll();
+        ]*/
+        this.filteredCourses= this.courseService.retrieveAlls();
+        //this.retrieveAll();
     }
 
     retrieveAll(): void { 

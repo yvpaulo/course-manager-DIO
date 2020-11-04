@@ -27,7 +27,8 @@ export class CourseListComponent implements OnInit {
              releaseDate: 'amanha',
              description: 'legal'}
         ]*/
-        this.filteredCourses= this.courseService.retrieveAlls();
+        this._courses= this.courseService.retrieveAlls();
+        this.filteredCourses= this._courses;
         //this.retrieveAll();
     }
 

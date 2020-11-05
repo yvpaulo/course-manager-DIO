@@ -3,6 +3,8 @@
 Projeto feito durante o Bootcamp da DIO para meu aprendizado de Angular
 Originalmente o curso é dado em Angular 8, porém atualizei alguns pacotes
 
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.18.
 
 ## Development server

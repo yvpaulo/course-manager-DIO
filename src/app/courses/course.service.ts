@@ -12,9 +12,7 @@ export class CourseService {
     private coursesUrl: string = 'http://localhost:3100/api/courses';
 
     constructor(private httpClient: HttpClient) { }
-    retrieveAlls(): Course[]{
-        return COURSES;
-    }
+   
     retrieveAll(): Observable<Course[]> {
         return this.httpClient.get<Course[]>(this.coursesUrl);
     }
